@@ -2,3 +2,4 @@
 simple-db-migrate==1.4.2
 psycopg2==2.5.1
 requests==2.0.0
+gunicorn==18.0
