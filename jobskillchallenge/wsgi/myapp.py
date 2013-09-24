@@ -31,6 +31,7 @@ __import__('{project}.app'.format(project=project.package_name),
 from jobskillchallenge.app.models.session import Session
 from jobskillchallenge.app.models.user import User
 
+from static_serve import static_serve
 # The main application pipeline
 # Include all WSGI middleware here. The order of
 # web transaction will flow from the bottom of this list
@@ -43,6 +44,7 @@ app = SessionManager(app, session_class=Session)
 app = DbMiddleware(app)
 app = ErrorMiddleware(app, error_controller=None)
 app = EndPybaldMiddleware(app)
+app = static_serve(app, path='public')
 # ----------------------------------
 #    ↑↑↑                  ↓↓↓
 #    ↑↑↑                  ↓↓↓
