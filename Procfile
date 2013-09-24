@@ -1,1 +1,1 @@
-web: gunicorn wsgi.myapp:app
+web: gunicorn jobskillchallenge.wsgi.myapp:app
