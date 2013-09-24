@@ -43,13 +43,14 @@ smtp_config = {"smtp_server": "127.0.0.1",
 
 # local database connection settings
 # default to a sqllite file database based on the project name
-database_engine_uri_format = 'sqlite:///{filename}'
-db_config = {'filename': os.path.join(path,
-             '{project}.sqlite'.format(project=project_name))}
+#database_engine_uri_format = 'sqlite:///{filename}'
+#db_config = {'filename': os.path.join(path,
+#             '{project}.sqlite'.format(project=project_name))}
 
 # create the db engine uri
-database_engine_uri = database_engine_uri_format.format(**db_config)
+# database_engine_uri = database_engine_uri_format.format(**db_config)
 
+database_engine_uri = os.environ['DATABASE_URL']
 #sqlalchemy engine arguments
 # database_engine_args = {'pool_recycle':3600,
 #                         'pool_size':50,
