@@ -28,8 +28,8 @@ __import__('{project}.app'.format(project=project.package_name),
                       globals(), locals(),
                       ['urls', 'models', 'controllers'], -1)
 
-from jobskill.app.models.session import Session
-from jobskill.app.models.user import User
+from jobskillchallenge.app.models.session import Session
+from jobskillchallenge.app.models.user import User
 
 # The main application pipeline
 # Include all WSGI middleware here. The order of
