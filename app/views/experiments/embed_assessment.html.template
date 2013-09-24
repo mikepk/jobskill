@@ -1,0 +1,8 @@
+<%inherit file="/layout/base.html.template"/>
+<%block name="header">
+<header class="container-12 centered">
+<h1>JobSkillChallenge</h1>
+</header>
+</%block>
+
+<script type="text/javascript" src="http://smarterer.com/js/popup.js"></script><a href="http://smarterer.com/tests/django/run?wuid=nzdlogiyn2" class="smarterer_test_link"><img src="http://smarterer.com/images/test-widget/adu/rect/django.png" alt="Django" /></a>

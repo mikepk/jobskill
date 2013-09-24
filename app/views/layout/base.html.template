@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html class="">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=1024" />
+<meta http-equiv="P3P" content='CP="NOI DSP COR NID PSAo OUR IND"'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<%block name="meta">
+<%block name="meta_description"></%block>\
+<%block name="meta_keywords"></%block>\
+</%block>\
+<%block name="rss_feed"></%block>\
+<title><%block name="title_block">\
+${self.title()}\
+% if capture(self.title):
+ - \
+% endif
+JobSkillChallenge\
+</%block></title>
+<%def name="title()"></%def>\
+##css should always come before javascript for better parallelization
+<%block name="css">
+${page.add_css('/css/reset.css')}
+${page.add_css('/css/grid.css')}
+${page.add_css('/css/site.css')}
+</%block>\
+<%block name="javascript">
+${page.add_js('http://codeorigin.jquery.com/jquery-1.10.2.min.js')}
+</%block>\
+<%block name="inline_style"></%block>\
+</head>
+<body>
+<%block name="status">
+<div class="status_bar">
+    % if user:
+        Logged In: ${user.username}
+    % endif
+</div>
+</%block>
+<%block name="header">
+    <header>
+    <%block name="logo">
+    </%block>
+    </header>
+</%block>
+
+<section>
+    ${next.body()}
+</section>
+<%block name="before_footer"></%block>
+<%block name="footer">
+##<%include file="/footer.html.template"/>
+</%block>
+</body>
+</html>

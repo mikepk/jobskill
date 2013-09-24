@@ -1,0 +1,133 @@
+body {
+    font-size: 18px;
+}
+
+h1 {
+    /* Times New Roman-based stack */
+    font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+    color: #788185;
+    font-size: 50px;
+    letter-spacing: -3px;
+    font-weight: lighter;
+    line-height: 1.6em;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+p {
+    margin: 1em 0;
+}
+
+@keyframes spaceout {
+        0%   {
+            letter-spacing: 25px;
+
+        }
+        100% {
+            letter-spacing: -3px;
+          }
+    }
+
+@-o-keyframes spaceout {
+        0%   {
+            letter-spacing: 25px;
+
+        }
+        100% {
+            letter-spacing: -3px;
+          }
+    }
+    @-moz-keyframes spaceout {
+        0%   {
+            letter-spacing: 25px;
+
+        }
+        100% {
+            letter-spacing: -3px;
+          }
+    }
+    @-webkit-keyframes spaceout {
+        0%   {
+            letter-spacing: 25px;
+
+        }
+        100% {
+            letter-spacing: -3px;
+          }
+    }
+
+h1.fancy_animated_header {
+    animation:spaceout           1.2s;
+    -moz-animation:spaceout      1.2s; /* Firefox */
+    -webkit-animation:spaceout   1.2s; /* Safari and Chrome */
+    -o-animation:spaceout        1.2s;  /* Opera */
+}
+
+.avail_posts {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 30px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 10px solid #F8F3B6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: rgb(255, 249, 176); /*#FFE145;*/
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.centered {
+    text-align: center;
+}
+
+.character_level {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 30px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 10px solid #F8F3B6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: rgb(255, 249, 176); /*#FFE145;*/
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.next_character_level {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 30px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 10px solid #F8F3B6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: rgb(255, 249, 176); /*#FFE145;*/
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.for_employers  {
+    margin-top: 5em;
+}
+
+.how_it_works {
+    margin-top: 4em;
+}
+
+.status_bar {
+    height: 1.3em;
+    background-color: #EEE;
+}

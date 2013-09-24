@@ -1,0 +1,12 @@
+*.template.py
+*.pyc
+#*#
+._*
+*.sqlite
+*.pid
+*.log
+src/
+build/
+environment.py
+logs/
+tmp/

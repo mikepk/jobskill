@@ -1,0 +1,19 @@
+<%inherit file="/layout/base.html.template"/>
+<%block name="header">
+<header class="container-12 centered">
+<h1>JobSkillChallenge</h1>
+</header>
+</%block>
+<script type="text/javascript" src="http://s0.smrtrr.com/js/popup.js"></script>
+
+
+<a href="http://smarterer.com/tests/python/run" class="smarterer_test_link"><img src="http://s0.smrtrr.com/images/test-widget/adu/rect/python.png" alt="Python" /></a>
+
+<a href="http://smarterer.com/tests/word/run" class="smarterer_test_link"><img src="http://s0.smrtrr.com/images/test-widget/adu/rect/word.png" alt="Microsoft Word" /></a>
+
+<a href="http://smarterer.com/tests/english-for-business/run" class="smarterer_test_link"><img src="http://s0.smrtrr.com/images/test-widget/adu/rect/english-for-business.png" alt="English for Business" /></a>
+
+##<button data-href="http://smarterer.com/tests/html5/run" class="smarterer_test_link">Button!</button>
+
+
+##<iframe style="height: 500px; width: 800px; display: block" src="http://smarterer.com/tests/ruby/run?embed=true" ></iframe>

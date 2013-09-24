@@ -1,0 +1,31 @@
+
+</%block>
+<section class="container-12">
+<div class="centered">There are currently <div class="avail_posts">${post_count}</div> job postings you can unlock.</div>
+
+<section class="container-12 how_it_works">
+<div class="grid7">
+<h2>How does this work?</h2>
+
+<p>This site is a job board but with a wrinkle: employers have set <em><strong>skill level targets</strong></em> that they want you to prove before you can unlock their job postings and apply.</p>
+
+<p>You can prove your mettle by taking advanced <em>adaptive</em> tests administered 
+by <a href="http://smarterer.com/" alt="Smarterer">Smarterer.com</a>. The tests are fast and fun.</p>
+
+<p>Imagine if a fun quiz game, big data, the computerized GMAT® and Wikipedia® had a love child, Smarterer tests are kind of like that.</p>
+
+<p>Gain levels through doing well on tests, the better you do on the skill tests, the more job postings you can unlock and apply for! We can also notify you as new jobs appear that you already qualify for.</p>
+</div>
+<div class="grid5">
+<p>Your current level:</p>
+<div class="character_level">${character_level}</div>
+<p>Next level: novice</p>
+</div>
+</section>
+<p>To get started, <a href="https://smarterer.com/oauth/authorize?client_id=d6f5690978574ab5a8ffb2ae33815b10">authenticate your Smarterer account with JobSkillChallenge</a>. Don't worry if you don't yet have a Smarterer account, you'll have the option to create an account if you don't already have one. We'll use your Smarterer account to keep track of you on JobSkillChallenge.</p>
+
+</section>
+
+<section class="container-12 for_employers">
+<a href="jobs/new">I want to post a job here</a>!
+</section>

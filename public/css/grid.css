@@ -1,0 +1,83 @@
+
+.container-12,.container-16
+{
+    margin-left:auto;
+    margin-right:auto;
+    width:800px;
+}
+
+.container-12:after, .container-16:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+[class*='grid']
+{
+    display: inline-block;
+    position:relative;
+    float: left;
+    margin-left:2.3145%;
+    margin-right:2.3145%;
+}
+
+.grid12
+{
+    width:95.355003%;
+}
+
+.grid11
+{
+    width:87.023003%;
+}
+
+.grid10
+{
+    width:78.691002%;
+}
+
+.grid9
+{
+    width:70.359001%;
+}
+
+.grid8
+{
+    width:62.027%;
+}
+
+.grid7
+{
+    width:53.695%;
+}
+
+.grid6
+{
+    width:45.362999%;
+}
+
+.grid5
+{
+    width:37.030998%;
+}
+
+.grid4
+{
+    width:28.698999%;
+}
+
+.grid3
+{
+    width:20.367001%;
+}
+
+.grid2
+{
+    width:12.035%;
+}
+
+.grid1
+{
+    width:3.703%;
+}

@@ -1,0 +1,21 @@
+
+# symlink the upstart script for uwsgi to /etc/init.d
+$ sudo ln -s /usr/share/smarterer/quiz_site/startup/uwsgi/uwsgi.conf /etc/init/uwsgi.conf
+
+# start the service
+$ sudo service uwsgi start
+
+
+# create necessary paths
+$ sudo mkdir -p /var/log/uwsgi
+$ sudo mkdir -p /etc/uwsgi/sites-enabled
+$ sudo mkdir -p /etc/uwsgi/sites-available
+
+# copy config for number of workers
+sudo cp /usr/share/smarterer/quiz_site/startup/uwsgi/smarterer.ini /etc/uwsgi/sites-enabled/smarterer_8080.ini
+# alter the file and change IP addresses and ports
+
+# notes:
+# restarting app
+$ sudo touch /etc/uwsgi/apps-enabled/XXXX
+
