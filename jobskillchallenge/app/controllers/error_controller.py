@@ -54,7 +54,7 @@ class ErrorController(BaseController):
         mode, or point to the regular error page otherwise.
         '''
         if project.email_errors or project.debug:
-            stack_trace = render_view(template='stack_trace', data={'req':req})
+            stack_trace = render_view(template='stack_trace', data={'req': req})
 
         if project.debug:
             return Response(body=stack_trace, status=self.status_code)

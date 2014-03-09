@@ -8,6 +8,8 @@ A module to hold project specific members and configuration.
 import sys
 import os
 from pybald.core.logs import default_debug_log
+import logging
+console = logging.getLogger(__name__)
 
 # Configure the project path and package name
 path = os.path.dirname(os.path.realpath(__file__))
@@ -18,8 +20,11 @@ package_name = os.path.split(path)[-1]
 project_name = package_name
 
 # debug information
-debug = True
-env_name = "Development"
+debug = True if os.environ.get('DEBUG', None) == 'True' else False
+env_name = os.environ['ENV_NAME']
+
+SMARTERER_CLIENT_ID = os.environ['SMARTERER_CLIENT_ID']
+SMARTERER_SECRET = os.environ['SMARTERER_SECRET']
 
 # options that are passed into the views
 # directly
@@ -50,7 +55,11 @@ smtp_config = {"smtp_server": "127.0.0.1",
 # create the db engine uri
 # database_engine_uri = database_engine_uri_format.format(**db_config)
 
+# heroku environment for db URL
 database_engine_uri = os.environ['DATABASE_URL']
+
+
+
 #sqlalchemy engine arguments
 # database_engine_args = {'pool_recycle':3600,
 #                         'pool_size':50,
@@ -64,9 +73,9 @@ global_table_args = {}
 
 # check for the environment file, if there, override options
 # with the environment
-if os.path.isfile(os.path.join(path, "environment.py")):
-    from environment import *
-    sys.stderr.write("LOADED ENVIRONMENT: {0}\n".format(env_name))
+# if os.path.isfile(os.path.join(path, "environment.py")):
+#     from environment import *
+#     sys.stderr.write("LOADED ENVIRONMENT: {0}\n".format(env_name))
 
 
 # HACK: this allows project.X to return a default of None when
@@ -84,6 +93,8 @@ class ConfigWrapper(object):
 
 if debug:
     default_debug_log()
+
+console.info("LOADED ENVIRONMENT: {0}\n".format(env_name))
 
 # Runs the project console. Allows interacting with the models and controllers.
 if __name__ == '__main__':

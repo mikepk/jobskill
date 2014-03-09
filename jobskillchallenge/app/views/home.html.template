@@ -27,7 +27,7 @@ by <a href="http://smarterer.com/" alt="Smarterer">Smarterer.com</a>. The tests 
 <p>Next level: novice</p>
 </div>
 </section>
-<p>To get started, <a href="https://smarterer.com/oauth/authorize?client_id=9a947adb8134494e866ae93787559187">authenticate your Smarterer account with JobSkillChallenge</a>. Don't worry if you don't yet have a Smarterer account, you'll have the option to create an account if you don't already have one. We'll use your Smarterer account to keep track of you on JobSkillChallenge.</p>
+<p>To get started, <a href="https://smarterer.com/oauth/authorize?client_id=${SMARTERER_CLIENT_ID}">authenticate your Smarterer account with JobSkillChallenge</a>. Don't worry if you don't yet have a Smarterer account, you'll have the option to create an account if you don't already have one. We'll use your Smarterer account to keep track of you on JobSkillChallenge.</p>
 
 </section>
 
