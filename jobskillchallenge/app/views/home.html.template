@@ -27,8 +27,9 @@ by <a href="http://smarterer.com/" alt="Smarterer">Smarterer.com</a>. The tests 
 <p>Next level: novice</p>
 </div>
 </section>
+% if user is None:
 <p>To get started, <a href="https://smarterer.com/oauth/authorize?client_id=${SMARTERER_CLIENT_ID}">authenticate your Smarterer account with JobSkillChallenge</a>. Don't worry if you don't yet have a Smarterer account, you'll have the option to create an account if you don't already have one. We'll use your Smarterer account to keep track of you on JobSkillChallenge.</p>
-
+% endif
 </section>
 
 ##<section class="container-12 for_employers">
