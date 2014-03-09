@@ -1,8 +1,9 @@
 from pybald.core.controllers import action, BaseController
 import requests
 from jobskillchallenge.app.models import User
-CLIENT_ID = "9a947adb8134494e866ae93787559187"
-CLIENT_SECRET = "dba7262cb357f29d0c508e1192b06226"
+import project
+CLIENT_ID = project.SMARTERER_CLIENT_ID
+CLIENT_SECRET = project.SMARTERER_SECRET
 
 
 class AuthenticatationController(BaseController):
