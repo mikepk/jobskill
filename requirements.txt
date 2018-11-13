@@ -1,5 +1,5 @@
 pybald==0.2.3
 simple-db-migrate==1.4.2
 psycopg2==2.5.1
-requests==2.0.0
+requests>=2.20.0
 gunicorn==19.9.0
